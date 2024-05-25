@@ -65,31 +65,32 @@ console.log(products.map(({ product }) => product));
 console.log(products.filter(({ product }) => product.length <= 5));
 
 //Exercise 3
-console.log(products
-    .filter(({ price }) => !isNaN(price) && price !== '' && price.trim() !== '')
-    .reduce((total, { price }) => total + Number(price), 0)
+console.log(
+    products
+      .filter(({ price }) => !isNaN(price) && price !== '' && String(price).length > 0)
+      .reduce((total, { price }) => total + Number(price), 0)
   );
 
 //Exercise 4
 console.log(products.reduce((acc, { product }) => acc + product, ''));
 
 //Exercise 5
-console.log(products
-    .filter(({ price }) => !isNaN(price) && price !== '' && price.trim() !== '')
-    .reduce((acc, { product, price }) => {
-      const numericPrice = Number(price);
-      if (numericPrice > acc.highest.price) {
-        acc.highest = { product, price: numericPrice };
-      }
-      if (numericPrice < acc.lowest.price) {
-        acc.lowest = { product, price: numericPrice };
-      }
-      return acc;
-    }, {
-      highest: { product: '', price: -Infinity },
-      lowest: { product: '', price: Infinity }
-    })
-  );
+const result = products
+  .filter(({ price }) => !isNaN(price) && price !== '' && String(price) !== ' ')
+  .reduce((acc, { product, price }) => {
+    const numericPrice = Number(price);
+    if (numericPrice > acc.highest.price) {
+      acc.highest = { product, price: numericPrice };
+    }
+    if (numericPrice < acc.lowest.price) {
+      acc.lowest = { product, price: numericPrice };
+    }
+    return acc;
+  }, {
+    highest: { product: '', price: -Infinity },
+    lowest: { product: '', price: Infinity }
+  });
+
 
 //Exercise 6
 console.log(products.map(({ product, price }) => ({ name: product, cost: price })));
