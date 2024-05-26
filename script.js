@@ -91,6 +91,7 @@ const result = products
     lowest: { product: '', price: Infinity }
   });
 
+  console.log(`Highest: ${result.highest.product}. Lowest: ${result.lowest.product}.`);
 
 //Exercise 6
 console.log(products.map(({ product, price }) => ({ name: product, cost: price })));
