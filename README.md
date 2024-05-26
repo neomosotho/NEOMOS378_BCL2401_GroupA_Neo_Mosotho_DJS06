@@ -1,7 +1,7 @@
 ### DJS06 Project Brief: Higher Order Functions
 
-#### Objective
-This project is designed to challenge and deepen your understanding of JavaScript's powerful array methods. You'll manipulate data using `forEach`, `map`, `filter`, `reduce`, and more, to perform a variety of tasks. This exercise will test your ability to apply these methods in combination to solve complex problems and achieve desired outcomes.
+Overview
+This project is designed to challenge and deepen your understanding of JavaScript's powerful array methods. You'll manipulate data using forEach, map, filter, reduce, and more to perform a variety of tasks. This exercise will test your ability to apply these methods in combination to solve complex problems and achieve desired outcomes.
 
 The essence of using these higher-order functions is to encourage a declarative approach to programming: you define what you want to achieve (e.g., filter a list, transform data) without having to specify how to perform the operations step-by-step (as you would with imperative loops like for or while). This leads to more readable, concise, and often more maintainable code. Additionally, these functions can help avoid side effects and create pure functions, both key aspects of functional programming.
 
@@ -48,16 +48,17 @@ For these exercises, wrap your logic in a single `console.log` statement:
 5. **Find Extremes in Prices**: Identify the highest and lowest-priced items, returning a string formatted as "Highest: X. Lowest: Y."
 6. **Object Transformation**: Using `Object.entries` and `reduce`, recreate the products object with keys 'name' and 'cost', maintaining their original values.
 
-#### Submission Guidelines
 
-- Submit the completed JavaScript file(s) containing your solutions.
-- Include comments to explain the logic behind your implementations, especially for the advanced exercises.
-- Prepare to discuss your approach, focusing on the "why" and "how" of your solutions during your assessment with a coach.
+## Running the Code
+To run the JavaScript code provided in this project, you can use Node.js or include the script in an HTML file and run it in a web browser console.
 
-#### Evaluation Criteria
+1.Using Node.js
+2.Install Node.js from nodejs.org.
+3.Save your JavaScript code in a file, e.g., arrayMethods.js.
+4.Open a terminal or command prompt.
+5.Navigate to the directory containing your file.
+6.Run the script with Node.js:
 
-- Correct application of JavaScript array methods to solve the given problems.
-- Ability to combine multiple array methods to manipulate and transform data effectively.
-- Code readability and efficiency.
-- Thoughtful commentary and explanation of your solution approach and decision-making process.
+## Challenges
+I experienced a challenge with the advanced challenges.
 
